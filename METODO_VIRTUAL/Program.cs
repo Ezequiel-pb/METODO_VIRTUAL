@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace metodo_virtual
 {
     class Program
@@ -13,24 +14,18 @@ namespace metodo_virtual
             miPerro.HacerSonido(); //El perro ladra
 
         }
-        
-            
-        public class Animal
-        {
-            public virtual void HacerSonido()
-            {
-                Console.WriteLine("El animal hace un sonido");
 
-            }
-        }
-        public class Perro : Animal
-        {
-            public override void HacerSonido()
-            {
-                Console.WriteLine("El perro ladra");
-
-            }
-        }    
     }
+
+    public class Animal
+    {
+        public virtual void HacerSonido()
+        {
+            Console.WriteLine("El animal hace un sonido");
+
+        }
+    }
+
+
 
 }
